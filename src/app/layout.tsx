@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist_Mono, Space_Grotesk } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { BackgroundLines } from "@/components/layout/BackgroundLines";
+import { SessionReplay } from "@/components/SessionReplay";
 import { SIGNUP_URL, X_URL } from "@/lib/nav";
 import {
   SHARE_DESCRIPTION,
@@ -128,6 +129,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <BackgroundLines />
         <Header />
         {children}
+        <SessionReplay />
       </body>
     </html>
   );
